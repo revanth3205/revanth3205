@@ -1,49 +1,246 @@
 <div align="center">
 
-<img src="./terminal.svg" alt="Terminal profile card" width="100%"/>
+<img src="./terminal.svg" alt="Kengana Revanth - terminal profile card" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00E5FF&center=true&vCenter=true&width=800&lines=Metasploit+Contributor+%7C+2+Merged+PRs;Web+%2F+API+%2F+Network+Penetration+Tester;Building+AI-driven+Intrusion+Detection" alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00E5FF&center=true&vCenter=true&width=800&lines=Metasploit+Contributor+%7C+2+Merged+PRs;Web+%2F+API+%2F+Network+Penetration+Tester;Building+AI-driven+Intrusion+Detection;Build.+Break.+Investigate.+Defend." alt="Typing SVG"/>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/revanth-kengana)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:revanthkengana3205@gmail.com)
-[![Bugcrowd](https://img.shields.io/badge/Bugcrowd-F26822?style=for-the-badge&logo=bugcrowd&logoColor=white)](https://bugcrowd.com)
+<p>
+  <img src="https://img.shields.io/badge/Cybersecurity-Research-red?style=for-the-badge&logo=hackthebox&logoColor=white" />
+  <img src="https://img.shields.io/badge/Penetration%20Testing-Active-black?style=for-the-badge&logo=kalilinux&logoColor=white" />
+  <img src="https://img.shields.io/badge/AI%20%26%20Security-Research-blue?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Open%20Source-Contributor-green?style=for-the-badge&logo=github&logoColor=white" />
+</p>
+
+<b>Cybersecurity undergraduate focused on offensive security, vulnerability research, security engineering, and AI-driven threat detection.</b>
 
 </div>
 
-## 🛡️ About Me
-- 🎓 B.Tech CSE (Cyber Security) student at **IIIT Kottayam**
-- 🔬 Cybersecurity Research Intern at **RV University**: Transformer-based adaptive intrusion detection
-- 🧩 **2 merged PRs** in Rapid7's [Metasploit Framework](https://github.com/rapid7/metasploit-framework): [#21882](https://github.com/rapid7/metasploit-framework/pull/21882) and [#21947](https://github.com/rapid7/metasploit-framework/pull/21947)
-- 🐞 Bugcrowd researcher: found a client-side game-logic flaw in the HackWithIndia VDP
-- 📜 Working toward **CEH v13**
+---
+
+## 🧑‍💻 About Me
+
+I'm a **B.Tech Computer Science & Engineering student specializing in Cyber Security** at the Indian Institute of Information Technology, Kottayam.
+
+My work sits at the intersection of:
+
+* 🔴 **Web & API Security**
+* ⚔️ **Penetration Testing & Vulnerability Assessment**
+* 🔬 **Vulnerability Research**
+* 🛡️ **Security Engineering**
+* 🤖 **AI-driven Threat Detection**
+* 🌐 **Network Security**
+* 🔎 **Digital Forensics & OSINT**
+* 🌍 **Open-Source Security**
+
+I prefer learning by building: security scanners, defensive systems, detection frameworks, forensic investigations, CTF challenges, and real-world vulnerability research.
+
+Currently exploring how **AI can augment both offensive security assessment and defensive detection systems**.
+
+---
+
+## 🏆 Open-Source Security Contributions
+
+### Rapid7 Metasploit Framework
+**Open-Source Security Contributor · 2 Merged PRs · 2026**
+
+#### 🔧 [PR #21882](https://github.com/rapid7/metasploit-framework/pull/21882) — Linux Persistence Module Validation
+* Fixed incorrect `WritableDir` validation across **8 Linux/multi persistence modules**.
+* Replaced incorrect `exists?` checks with appropriate `directory?` validation.
+* Tested the changes against a **Metasploitable2** environment.
+* Merged into `rapid7/master`.
+
+#### 🧪 [PR #21947](https://github.com/rapid7/metasploit-framework/pull/21947) — Frozen DNS Question Regression
+* Added regression coverage for `Net::DNS::Question#check_name`.
+* Addressed a `FrozenError` caused by mutation of frozen DNS question names.
+* Verified with **RSpec, RuboCop, msftidy, msfconsole, and functional testing**.
+* Merged into `rapid7/master`.
+
+> Contributing to a widely used penetration-testing framework taught me a lot about production security tooling, testing, debugging, and secure code changes.
+
+---
+
+## 🔬 Vulnerability Research
+
+### HackWithIndia — Vulnerability Disclosure Program (Bugcrowd)
+**Security Researcher · January 2026**
+
+Identified and reported a **client-side game-logic vulnerability** that allowed manipulation of URL parameters to force unauthorized game-winning states.
+
+```text
+Application Analysis → JavaScript Logic Review → Parameter Manipulation
+→ Vulnerability Identification → Proof of Concept → Impact Analysis
+→ Responsible Disclosure
+```
+
+The report included reproduction steps, proof-of-concept evidence, impact analysis, and remediation recommendations.
+
+---
 
 ## 🚀 Featured Projects
-| Project | Description | Stack |
+
+### 🎣 Visor — Client-Side Browser Trust-Spoofing Phishing Detector *(in progress)*
+Chrome extension that detects **AiTM reverse-proxy phishing (Evilginx 3.3)** and **IDN homograph domains** on-device, blocking malicious navigations and credential submissions before tokens or passwords leave the browser.
+
+| Metric | Result |
+|---|---|
+| Dataset | 11,333 AiTM visits on an Azure testbed |
+| Model | Compiled Decision Tree (6.1 KB) |
+| ROC-AUC | **0.982** |
+| Recall | **94.6%** |
+| Page-load overhead | **1.41 ms** |
+
+**Stack:** `Chrome MV3` `JavaScript` `Python` `Scikit-learn` `Playwright` `Evilginx` `Azure`
+
+---
+
+### 🧠 AI-Driven Adaptive Intrusion Detection & Network Threat Intelligence
+ML-based IDS on **CICIDS2017 (2.8M+ flows)** covering preprocessing, feature engineering, anomaly detection, and multiclass attack classification. Research extension: **Transformer-based temporal anomaly detection**.
+
+**Detects:** `DDoS/DoS` `Port Scanning` `Brute Force` `SQL Injection` `XSS` `Botnet` `Infiltration`
+
+**Stack:** `Python` `Pandas` `NumPy` `Scikit-learn` `Matplotlib`
+
+---
+
+### 🕷️ WebSentry — Web Application Vulnerability Scanner
+Modular, Python-based **OWASP Top 10** scanner with confidence-based findings, **CVSS severity scoring**, and structured JSON reports.
+
+<details>
+<summary><b>Capabilities and architecture</b></summary>
+
+* 🔎 Reconnaissance · 🕸️ Crawling · 🔍 Technology fingerprinting
+* 💉 SQLi · 🧪 XSS · 🔐 CSRF · 🔑 IDOR · ↪️ Open Redirect detection
+
+```text
+Target
+  ├── Reconnaissance
+  ├── Crawling
+  ├── Fingerprinting
+  ├── Endpoint Discovery
+  └── Vulnerability Detection
+          ├── SQLi / XSS / CSRF / IDOR / Open Redirect
+                    ↓
+              Finding Engine
+                    ↓
+             CVSS + Confidence
+                    ↓
+              JSON Report
+```
+</details>
+
+**Stack:** `Python` `Requests` `BeautifulSoup` `OWASP` `CVSS`
+
+---
+
+### 🛡️ AegisWAF — Custom Web Application Firewall
+Multithreaded reverse-proxy WAF that detects and mitigates common web attacks.
+
+* SQLi, XSS and Command Injection detection
+* IP blacklist, anomaly scoring, sliding-window rate limiting
+* Structured security logging and a modular rule engine
+
+**Stack:** `Python` `Regex` `JSON` `Multithreading` `HTTP`
+
+---
+
+## 💼 Experience
+
+### Cybersecurity Research Intern — RV University, Bengaluru
+**AI & Intrusion Detection · Jun 2026 – Aug 2026**
+
+Designing an AI-driven adaptive intrusion detection and network threat intelligence framework using **Transformer-based temporal anomaly detection**, with research in IDS architectures, temporal traffic analysis, and cyber-threat analytics.
+
+---
+
+## 🧪 Security Research Areas
+
+| Area | Focus |
+| --- | --- |
+| 🌐 Web Security | OWASP Top 10, API Security, Authentication, Access Control |
+| ⚔️ Offensive Security | VAPT, Pentesting, Reconnaissance, Enumeration |
+| 🔬 Vulnerability Research | Root-cause analysis, PoC development, responsible disclosure |
+| 🛡️ Defensive Security | WAF, IDS, anomaly detection, security monitoring |
+| 🤖 AI Security | AI-assisted detection, anomaly detection, security automation |
+| 🔎 DFIR | Disk forensics, metadata analysis, investigation |
+| 🌍 OSINT | Reconnaissance, information gathering, intelligence analysis |
+
+---
+
+## 🛠️ Technical Arsenal
+
+**Programming**
+<p>
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white"/>
+<img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
+<img src="https://img.shields.io/badge/Bash-121011?style=flat-square&logo=gnubash&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
+</p>
+
+**Offensive Security**
+<p>
+<img src="https://img.shields.io/badge/Burp%20Suite-FF6633?style=flat-square&logo=portswigger&logoColor=white"/>
+<img src="https://img.shields.io/badge/OWASP-000000?style=flat-square&logo=owasp&logoColor=white"/>
+<img src="https://img.shields.io/badge/Nmap-4682B4?style=flat-square"/>
+<img src="https://img.shields.io/badge/Metasploit-2596CD?style=flat-square"/>
+<img src="https://img.shields.io/badge/Nuclei-000000?style=flat-square"/>
+<img src="https://img.shields.io/badge/SQLMap-CC0000?style=flat-square"/>
+<img src="https://img.shields.io/badge/FFUF-000000?style=flat-square"/>
+<img src="https://img.shields.io/badge/Gobuster-000000?style=flat-square"/>
+</p>
+
+**Network & Recon:** `Wireshark` `Nmap` `Amass` `Subfinder` `Nikto`
+**DFIR / OSINT:** `Magnet AXIOM` `Autopsy` `FTK Imager` `ExifTool`
+**Libraries:** `Pandas` `NumPy` `Scikit-learn` `Flask` `Requests` `BeautifulSoup`
+**DevOps:** `Git` `GitHub` `Docker` `Linux CLI` `VirtualBox` `VMware`
+**OS:** `Kali Linux` `Ubuntu` `Windows`
+**Knowledge:** `OWASP Top 10` `MITRE ATT&CK` `CVSS` `API Security` `Network Security` `VAPT` `DFIR`
+
+---
+
+## 📚 Currently Learning
+
+```text
+Web App Security → API Security → Advanced Vulnerability Research
+→ AI-Augmented Security Testing → SOC & Threat Detection → Security Engineering
+```
+
+I build practical labs and security tooling rather than limiting my learning to theory.
+
+## 🎯 Current Focus
+
+| 🔴 Offensive | 🔵 Defensive | 🟣 AI + Security |
 |---|---|---|
-| **Visor** (in progress) | Chrome MV3 extension that detects AiTM reverse-proxy phishing (Evilginx) and IDN homograph domains on-device. Decision Tree reaches **0.982 ROC-AUC**, **94.6% recall**, 1.41 ms overhead | JavaScript, Python, Scikit-learn, Playwright, Azure |
-| **WebSentry** | Modular OWASP Top 10 scanner (SQLi, XSS, CSRF, IDOR, Open Redirect) with CVSS-based JSON reports | Python, Requests, BeautifulSoup |
-| **AI-Driven Adaptive IDS** | ML-based IDS on CICIDS2017 (2.8M+ flows) that classifies 8+ attack categories | Python, Pandas, Scikit-learn |
+| Web app and API pentesting | Intrusion detection | AI-assisted detection |
+| Vulnerability research | Network threat intelligence | Security automation |
+| Attack-surface discovery | Security monitoring | Human-validated findings |
 
-## 🧰 Toolbox
-![Kali](https://img.shields.io/badge/Kali_Linux-557C94?style=flat-square&logo=kalilinux&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=flat-square&logo=portswigger&logoColor=white)
-![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=flat-square&logo=metasploit&logoColor=white)
-![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+I'm exploring architectures where AI assists security workflows while keeping **deterministic tooling, controlled execution, evidence-based findings, and human validation** at the core.
 
-**Web/API:** Burp Suite, OWASP ZAP, SQLMap, FFUF, Gobuster, Nuclei, Nikto, Postman
-**Network/Recon:** Nmap, Wireshark, Metasploit, Amass, Subfinder
-**DFIR:** Magnet AXIOM, Autopsy, FTK Imager, ExifTool
+## 🏅 Certifications
+**Certified Ethical Hacker (CEH v13)** — EC-Council · *In Progress*
 
-## 📊 GitHub Stats
-<div align="center">
+---
 
-![Stats](https://github-readme-stats.vercel.app/api?username=revanth3205&show_icons=true&theme=tokyonight&hide_border=true)
-![Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=revanth3205&layout=compact&theme=tokyonight&hide_border=true)
+## 📊 GitHub Activity
 
-</div>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=revanth3205&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" height="165"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=revanth3205&layout=compact&theme=tokyonight&hide_border=true" height="165"/>
+</p>
+
+## 🤝 Let's Connect
+
+<p align="center">
+<a href="https://www.linkedin.com/in/revanth-kengana"><img src="https://img.shields.io/badge/LinkedIn-Revanth%20Kengana-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="https://github.com/revanth3205"><img src="https://img.shields.io/badge/GitHub-revanth3205-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
+<a href="mailto:revanthkengana3205@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+</p>
+
+<p align="center">
+
+### 🔐 Build. Break. Investigate. Defend.
+
+*Learning cybersecurity by building systems, breaking assumptions, and contributing back to the security community.*
+
+</p>
